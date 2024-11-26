@@ -1,0 +1,90 @@
+{
+    "pagesEditor": {
+        "index": {
+            "title": "Sensi Home"
+        },
+        "about": "Sobre Nosotros",
+        "contact": "Contacto",
+        "products": "Productos",
+        "product": "Producto"
+    },
+
+    "componentsEditor":{
+        "navbar": {
+            "nameApp": {
+                "text": "Sensi Home",
+                "href": "/"
+            },
+            "signin": {
+                "text": "Iniciar Sesión",
+                "href": "/signin"
+            },
+
+            "shop": {
+                "text": "Comprar",
+                "href": "/products"
+            },
+            "searchHolder": {
+                "placeholder": "Buscar"
+            },
+            "cart": {
+                "text": "Carrito",
+                "href": "/cart"
+            },
+            
+            "imgApp": {
+                "src": "./ico.png",
+                "alt": "Logo"
+            },
+            "imgSearch": {
+                "src": "./ico.png",
+                "alt": "Buscar"
+            },
+            "imgCart": {
+                "src": "./ico.png",
+                "alt": "Carrito"
+            },
+            "imgUser": {
+                "src": "./ico.png",
+                "alt": "Usuario"
+            }
+        }
+    },
+
+    "textForm": {
+        "branchText": "Titulo padrisimo",
+        "branchTextEnfasis": "Ya construimos un freamwork JS con menos codigo que react"
+    },
+    "meta": {
+        "facebook": {
+            "og:title": "Zapatillas Deportivas Nike",
+            "og:description": "Compra zapatillas Nike con descuentos. Envíos gratis en pedidos mayores a $50.",
+            "og:image": "https://tu-sitio.com/imagenes/zapatillas.jpg",
+            "og:url": "https://tu-sitio.com/producto/zapatillas-nike",
+            "og:type": "product"
+        },
+        "twitter": {
+            "twitter:card": "summary_large_image",
+            "twitter:title": "Zapatillas Deportivas Nike",
+            "twitter:description": "Descubre nuestras zapatillas Nike con envío gratis y descuentos.",
+            "twitter:image": "https://tu-sitio.com/imagenes/zapatillas.jpg"
+        }
+    },
+    "links": {
+        "icon": {
+            "rel": "icon",
+            "href": "./ico.png",
+            "type": "image/x-icon"
+        },
+        "canonical": {
+            "rel": "canonical",
+            "href": "https://sensihome.com.mx"
+        }
+    },
+    "images": {
+        "logo": {
+            "src": "./ico.png",
+            "alt": "Logo"
+        }
+    }
+}

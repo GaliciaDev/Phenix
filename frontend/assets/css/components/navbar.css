@@ -1,0 +1,92 @@
+.app-img{
+    width: 30px;
+    height: 30px;
+}
+
+.nav-elements{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: var(--border-1);
+    padding: .5rem;
+}
+
+.nav-elements li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+.nav-link{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    align-items: center;
+}
+
+.nav-link img,.nav-link span{
+    margin-right: var(--icon-element-spacing);
+}
+
+.nav__search{
+    border: 2px solid var(--color-border-main);
+    border-radius: 5px;    
+}
+
+.nav__search span{
+    border: 2px solid var(--color-border-main);
+    border-radius: 5px;
+    margin: 2px 5px 2px 2px;
+    color: var(--color-text-search-main);
+    font-size: var(--size-icon-search);
+}
+
+.nav-toogle{
+    display: flex;
+}
+
+/* Hovers para esta seccion del nav */
+
+.nav__search:hover, .nav__search:hover span{
+    border: 2px solid var(--hover-app-main);
+    color: var(--color-text-search-secondary);
+}
+
+.nav-link:hover{
+    color: var(--hover-app-main);
+}
+
+.nav-link:hover .app-img {
+    filter: invert(0.7);
+}
+
+/* Parte responsiva para celures */
+@media screen and (max-width: 768px){
+    
+    .text-menu , .nav__search input{
+        display: none;
+    }
+
+    .text-logo{
+        white-space: nowrap;
+        font-size: 1.2rem;
+    }
+    
+    .nav__search , .nav__search span{
+        border: none;
+        font-size: 1.6rem;
+    }
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,351 @@
+/* Contenedor principal */
+.category-page__container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: hidden; /* Evitar el desbordamiento horizontal */
+}
+
+.category-page__container details {
+    padding-bottom: 1rem;
+}
+
+.category__container {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-right: 1rem;
+    padding: 1rem;
+}
+
+.category__title p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 1rem;
+}
+
+.position-navegation {
+    padding-bottom: 2rem;
+    color: gray;
+}
+
+.position-navegation span:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.position-navegation i {
+    font-size: 1rem;
+    font-weight: lighter;
+    color: gray;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.price-dropdown {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+}
+
+.price-dropdown details {
+    background-color: white;
+}
+
+.price-dropdown summary {
+    padding: .5rem;
+    background-color: #000;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+    width: 100%; /* Asegura que el summary no exceda el ancho del contenedor */
+}
+
+.range_container {
+    padding-top: 3.5rem;
+    padding-bottom: 2rem;
+}
+
+.relevance-dropdown summary {
+    padding: .5rem;
+    background-color: #000;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+    width: 100%; /* Asegura que el summary no exceda el ancho del contenedor */
+}
+
+.group-check {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+/* Estilo para el contenedor del checkbox */
+.slide-check-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+/* Ocultar el checkbox original */
+.slide-check-container input[type="checkbox"] {
+    display: none;
+}
+
+/* Estilo para la etiqueta que actúa como el interruptor */
+.slide-check-container label {
+    position: relative;
+    display: inline-block;
+    width: 40px; /* Reducir el ancho */
+    height: 20px; /* Reducir la altura */
+    background-color: #ccc;
+    border-radius: 20px; /* Ajustar el radio del borde */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.slide-check-container span {
+    padding-left: 1rem;
+}
+
+/* Estilo para el círculo deslizante */
+.slide-check-container label::after {
+    content: "";
+    position: absolute;
+    top: 1.5px; /* Ajustar la posición vertical */
+    left: 1.5px; /* Ajustar la posición horizontal */
+    width: 17px; /* Reducir el ancho */
+    height: 17px; /* Reducir la altura */
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+/* Cambiar el fondo y mover el círculo cuando el checkbox está marcado */
+.slide-check-container input[type="checkbox"]:checked + label {
+    background-color: #000;
+}
+
+.slide-check-container input[type="checkbox"]:checked + label::after {
+    transform: translateX(20px); /* Ajustar la distancia de desplazamiento */
+}
+
+.color-dropdown summary {
+    padding: .5rem;
+    background-color: #000;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+    width: 100%; /* Asegura que el summary no exceda el ancho del contenedor */
+}
+
+/* Fondo gris a mi check cuando este inactivo y negro cuando ya este activo */
+.color-element {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.color-element input[type="checkbox"] {
+    display: none; /* Ocultar el checkbox original */
+}
+
+.color-element label {
+    position: relative;
+    padding-left: 1.5rem;
+    cursor: pointer;
+}
+
+.color-element label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    border-radius: 3px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.color-element label::after {
+    content: "\f00c"; /* Código Unicode para el icono de check */
+    font-family: "Font Awesome 5 Free"; /* Asegúrate de que Font Awesome esté cargado */
+    font-weight: 900; /* Peso del icono */
+    position: absolute;
+    left: 0.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 0.8rem;
+    opacity: 0; /* Ocultar el icono por defecto */
+    transition: opacity 0.3s;
+}
+
+.color-element input[type="checkbox"]:checked + label::before {
+    background-color: #dbd334;
+    border-color: #dbd334;
+}
+
+.color-element input[type="checkbox"]:checked + label::after {
+    opacity: 1; /* Mostrar el icono cuando el checkbox está marcado */
+}
+
+.color-element input[type="checkbox"]:not(:checked) + label::before {
+    background-color: #ccc;
+    border-color: #ccc;
+}
+
+.filter__products {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.leaked-products__container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 1rem;
+}
+
+.products-filters {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas de igual tamaño */
+}
+
+.filter-elements {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.filter-element {
+    transition: 0.5s;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0.3rem;
+    border: 2px solid #191818;
+}
+
+.filter-element i {
+    font-size: small;
+    color: gray;
+}
+
+.filter-element i:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.filter-element:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px 0 #000;
+    border-radius: 10px;
+}
+
+/* Media Queries para hacer la página responsive */
+@media (max-width: 768px) {
+    .category-page__container {
+        flex-direction: column;
+    }
+
+    .category__container {
+        width: 100%;
+        padding-right: 1rem;
+    }
+
+    .leaked-products__container {
+        width: 100%;
+    }
+
+    .products-filters {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas medianas */
+        margin-left: 1.2rem;
+        padding: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .products-filters {
+        grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+    }
+
+    .responsive-2-col {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-right: 2rem;
+        gap: 1rem;
+        font-size: small;
+        display: none;
+    }
+
+    .responsive-1-col {
+        margin-right: 2rem;
+        display: none;
+    }
+
+    .category__title {
+        display: flex;
+        justify-content: space-between; /* Asegura que los elementos se distribuyan entre sí */
+        align-items: center; /* Centra verticalmente los elementos */
+        width: 100%;
+    }
+
+    .category__title p {
+        font-size: 1.5rem;
+    }
+
+    .category__title a {
+        display: flex;
+        padding: .3rem;
+        background-color: #000;
+        color: white;
+        text-decoration: none; /* Quitar decoración */
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        margin-right: 2rem;
+    }
+
+    .position-navegation i {
+        font-size: 0.8rem;
+    }
+
+    .enter-filter{
+        display: flex;
+        justify-content: center;
+        margin-right: 1rem;
+        display: none;
+    }
+
+    .enter-filter a{
+        text-decoration: none;
+        padding: .5rem;
+        width: 80%;
+        background-color: #000;
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+        
+    }
+
+    .leaked-products__container{
+        padding-top: 0;
+    }
+
+    .filters-selects {
+        display: none;
+    }
+}

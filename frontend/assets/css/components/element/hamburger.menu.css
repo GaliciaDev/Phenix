@@ -1,0 +1,42 @@
+
+
+/* Diseñando del boton hambuergesas, la forma con span */
+.toogle-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.toogle-menu input{
+    position: absolute;
+    margin: auto 0;
+    opacity: 0;    
+}
+
+.toogle-menu span{
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: var(--color-menu-toogle);
+    margin: 5px 0;
+    transition: 0.1s;
+}
+
+/* Transformando a X */
+
+.toogle-menu input:checked + label span:nth-child(1){
+    transform: rotate(45deg);
+    position: relative;
+    top: 8px;
+}
+
+.toogle-menu input:checked + label span:nth-child(2){
+    opacity: 0;
+}
+
+.toogle-menu input:checked + label span:nth-child(3){
+    transform: rotate(-45deg);
+    position: relative;
+    top: -8px;
+}

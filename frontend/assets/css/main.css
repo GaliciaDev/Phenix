@@ -1,0 +1,136 @@
+
+@font-face {
+    font-family: 'sinsum';
+    src: url('../fonts/simsun.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* Paleta de colores */
+    --app-color: white;
+
+    --color-primary: #f9f9f9;
+    --color-secondary: #f9f9f9;
+    --color-tertiary: #f9f9f9;   
+
+    --color-search: #676565;
+    
+    --color-title-lg: #f9f9f9;
+    --color-title-md: #f9f9f9;
+    --color-title-sm: #f9f9f9;
+
+    --color-text-lg-light: #000000;
+    --color-text-lg-gray: rgb(0, 0, 0);
+    --color-text-lg: #000000;
+    --color-text-md: #000000;
+    --color-text-md-light: #f9f9f9;
+    --color-text-sm: #f9f9f9;
+
+    --color-text-search-main: #000000;
+    --color-text-search-secondary: #ccc;
+
+    /* Menu hamburgesa */
+    --color-menu-toogle: #000000;
+
+    --color-border-main: #000000;
+    --color-border-secondary: #ccc;
+
+    --color-hover: #1d1b1b;
+    --color-shadow: #f9f9f9;
+
+    --color-btn: #f9f9f9;
+    --color-btn-hover: #f9f9f9;
+
+    --color-bar-elements: #676565;
+
+    --color-price: #f9f9f9;
+    --color-heart: #f9f9f9;
+    --color-cart: #f9f9f9;
+
+    /* Tamaños base */
+    --size-title-lg: 2.5rem;
+    --size-title-md: 2rem;
+    --size-title-sm: 1.5rem;
+    --size-title-xs: 1.25rem;
+
+    --size-text-lg: 1.3rem;
+    --size-text-md: 1rem;
+    --size-text-sm: .9rem;
+
+    /* Iconos */
+    --size-icon-search: 1rem;
+    
+
+    /* Fondos */
+    --bg-primary: #000000;
+    --bg-secondary: #f9f9f9;
+
+    /* Hovers */
+        /* Inputs */
+        --hover-app-main: #ccc;
+
+
+    /* Espaciados */
+    --spacing-lg: 2rem;
+    --spacing-md: 1.5rem;
+    --spacing-sm: 1rem;
+
+    /* Fuentes */
+    --font-primary: 'sinsum', sans-serif;;
+    --font-secondary: 'Roboto', sans-serif;
+
+
+    /* Breakpoints */
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+
+    /* Z-index */
+    --z-index-header: 1000;
+    --z-index-modal: 2000;
+
+    /* Animaciones */
+    --transition: 0.3s ease-in-out;
+    --transition-hover: 0.3s ease-in-out;
+    --transition-modal: 0.3s ease-in-out;
+
+    /* Border radius */
+    --border-rd-lg: 1rem;
+    --border-rd-md: 0.5rem;
+    --border-rd-sm: 0.25rem;
+
+    /* Box shadow */
+    --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 5px 10px rgba(0, 0, 0, 0.1);
+    --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    /* Degradado */
+    --gradient-main: linear-gradient(90deg, #f9f9f9 0%, #f9f9f9 100%);
+    --gradient-secondary: linear-gradient(90deg, #f9f9f9 0%, #f9f9f9 100%);
+
+       /* bordes para depuracion */
+       --border-1: 1px solid red;
+       --border-2: 1px solid green;
+       --border-3: 1px solid blue;
+
+    /* Separaciones */
+
+    /* Navbar */
+    --icon-element-spacing: .5rem;
+}
+
+*{
+    /* quitar la barra */
+    scrollbar-width: none;
+}
+

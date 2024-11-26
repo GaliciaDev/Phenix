@@ -1,0 +1,13 @@
+{
+    "mysql":{
+        "host":"localhost",
+        "database": "u224160417_app_model",
+        "username": "u224160417_sensi_auth",
+        "password": "n4=x!E8]p2NQ"
+    },
+    "mongodb":{
+        "uri": "mongodb://localhost:27017/u224160417_app_model",
+        "database": "u224160417_app_model"
+    }
+
+}

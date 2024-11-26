@@ -1,0 +1,948 @@
+
+
+
+body, html {
+    
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-primary);
+    background-color: var(--app-color);
+    color: var(--color-text-md);
+    color: var(--color-text-md);
+    
+}
+
+.spaceDiv{
+    height: 100vh;
+    background-color: white;
+}
+
+.icon-nav {
+    height: 30px;
+    width: auto;
+}
+
+.nav__container{
+    /* border: 1px solid red; */
+    
+}
+
+.nav__container ul {
+    list-style: none;
+    padding: 0;    
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav__container ul li {
+    /* Puedes agregar otros estilos aquí si es necesario */
+}
+
+.nav__container ul li a {
+    color: var(--color-text-md);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.navbar__responsive {
+    border: solid 1px var(--color-border); /* Añade un borde al contenedor */
+    
+}
+
+.navbar__responsive ul {
+    justify-content: space-between;
+    
+}
+
+.navbar__responsive ul {
+    justify-content: space-between;
+}
+
+
+.nav__desktop{
+    padding: 1rem;
+    /* border: solid 1px var(--color-border); */
+}
+
+.nav__desktop span {
+    font-size: var(--size-title-sm);
+}
+
+.searchDesktop { /* Este es el div */
+    display: inline-flex;   
+    align-items: center;
+    border: solid 3px var(--color-border);
+    border-radius: 5px ;
+    padding: 0.3rem;
+    margin-left: 1rem;
+    width: 62vw;
+}
+
+.searchDesktop span {
+    font-size: 25px;
+    border: solid 3px var(--color-border);
+    border-radius: 5px ;
+    padding: 0.1rem;
+    color: var(--color-border);
+}
+
+.searchDesktop input {
+    border: none;
+    /* quitar border del placesholder */
+    outline: none;
+    width: 100%;
+    font-size: var(--size-title-xs);
+    padding-left: 1rem;
+    /* cambiar el color del place holder */
+    color: var(--color-search);
+    font-family: var(--font-primary);
+}
+
+.text-nav-icon{
+    padding-left: 1rem;
+}
+
+.text-nav-logo{
+    padding-left: .3rem;
+}
+
+
+.bar__category {
+    display: flex; /* flex */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    padding: 1rem; /* Añade padding si es necesario */
+    border-top: solid 1px var(--color-border); /* Añade borde superior si es necesario */
+    
+}
+
+.bar__category ul {
+    display: flex;
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0;
+    margin: 0;
+}
+
+.bar__category li {
+    position: relative; /* Necesario para el posicionamiento del dropdown */
+    margin: 0 1rem; /* Añade margen entre los elementos de la lista */
+    
+}
+
+.bar__category a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: var(--bg-primary);
+    font-size: var(--size-text-md);
+    padding: 0.5rem; /* Añade padding a los enlaces */
+    display: block; /* Asegura que los enlaces ocupen todo el ancho disponible */
+}
+
+.drop__down {
+    display: none; /* Oculta el dropdown por defecto */
+    position: absolute; /* Posiciona el dropdown relativo al <li> */
+    top: 100%; /* Coloca el dropdown justo debajo del <li> */
+    left: 0;
+    right: 0;
+    margin: 0 auto; /* Centra el dropdown horizontalmente */
+    flex-direction: row; /* Distribuye los <div> en columnas */
+    
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+    width: 630px;
+}
+
+.bar__category li:hover .drop__down {
+    display: flex; /* Muestra el dropdown al pasar el mouse sobre el <li> */
+}
+
+.elements-down {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Distribuye los items en un máximo de 2 columnas */
+    gap: 1rem; /* Añade espacio entre los items */
+    flex: 1; /* Permite que los items ocupen el espacio disponible a la izquierda */
+    align-items: center;
+    background-color: var(--bg-secondary);
+    
+}
+
+.elements-down a {
+    display: block; /* Asegura que los enlaces ocupen todo el ancho disponible */
+    color: var(--color-bar-elements);
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    padding: 1rem;
+}
+
+.elements-down a:hover {
+    color: var(--color-hover);
+}
+
+.img-down {
+    flex: 1; /* Permite que la imagen ocupe el espacio disponible a la derecha */
+    width: 100%;
+    height: 100%;
+}
+
+.img-down img {
+    width: 100%; /* Asegura que la imagen ocupe todo el contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: scale-down;
+    margin-bottom: -2.5px;
+}
+
+/* Footer */
+
+
+
+/* ---------------------------------------------------------------------- */
+.nav__responsive {
+    position: relative; /* Posiciona el contenedor de manera absoluta */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+    background-color: white; /* Ajusta el color de fondo según sea necesario */
+    z-index: 1000; /* Asegura que el contenedor esté por encima de otros elementos */
+    
+}
+
+.nav__responsive ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos a la izquierda */    
+    padding: 0; /* Elimina el padding del ul */
+    margin: 0; /* Elimina el margen del ul */
+    
+}
+
+.nav__responsive ul li {
+    padding: 0; /* Elimina el padding de los li */
+    margin: 0; /* Elimina el margen de los li */
+    padding-left: 1rem; /* Mantiene la separación a la izquierda */
+    width: calc(100% - 1rem); /* Ajusta el ancho para mantener la separación a la izquierda */
+}
+
+.nav__responsive ul li a {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el contenido dentro del enlace */
+    padding: 0.5rem 0; /* Ajusta el padding según sea necesario */
+}
+
+.nav__responsive ul li details summary {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el contenido dentro del summary */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el summary */
+}
+
+.nav__responsive ul li details summary span {
+    padding-right: 0.5rem; /* Añade un margen derecho para separar el icono del texto */
+}
+
+.category-content a {
+    margin-left: 2rem;
+}
+
+.rectangle {
+    /* width con calc */
+     
+    height: 2vh;
+    background-color: var(--bg-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nav__responsive ul li details summary .row-category {
+    margin-left: auto; /* Mueve el contenido a la derecha */;
+}
+
+.searchView__responsive {
+    display: none;
+    flex-direction: column; /* Asegura que los elementos hijos se coloquen en una columna */
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--bg-secondary);
+    padding: 1rem; /* Añade padding en los extremos */
+    box-sizing: border-box; /* Incluye el padding en el tamaño total del elemento */
+    z-index: 1000; /* Asegura que el contenedor esté por encima de otros elementos */
+}
+
+.searchView__responsive a{
+    text-decoration: none;
+    color: var(--color-text-md);
+}
+
+.search-group {
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre el input y el botón de cerrar */
+    width: 100%;
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    
+    box-sizing: border-box; /* Incluye el padding en el tamaño total del elemento */
+}
+
+.search__responsive-design {
+    display: flex;
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    flex-grow: 1; /* Permite que este div ocupe el espacio disponible */
+    border: solid 1px var(--color-border);
+    border-radius: 10px;
+    padding: 0.5rem; /* Añade padding interno */
+    margin-right: 1rem; /* Añade un margen derecho para separar del botón de cerrar */
+    box-sizing: border-box; /* Incluye el padding en el tamaño total del elemento */
+}
+
+.search__responsive-design input {
+    border: none; /* Elimina el borde del input */
+    outline: none; /* Elimina el borde al hacer click */
+    width: 100%; /* Asegura que el input ocupe todo el ancho disponible */
+    
+    font-size: var(--size-text-md); /* Ajusta el tamaño de la fuente */
+    color: var(--color-search); /* Ajusta el color del texto */
+    background-color: transparent;
+    font-family: var(--font-primary);
+    box-sizing: border-box; /* Incluye el padding en el tamaño total del elemento */
+}
+
+.search__responsive-design span {
+    padding-left: 0.5rem; /* Añade padding al icono de búsqueda */
+    color: var(--color-search); /* Ajusta el color del icono de búsqueda */
+}
+
+.close-search {
+    cursor: pointer; /* Cambia el cursor al pasar sobre el icono */
+    display: flex;
+    align-items: center; /* Alinea el icono verticalmente al centro */
+}
+
+.close-search a {
+    color: var(--color-bar-elements);
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    font-size: 2rem;
+}
+
+.products-result {
+    display: flex;
+    flex-direction: column; /* Asegura que el contenido esté en una columna */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    
+    overflow-y: auto; /* Permite el desplazamiento vertical si el contenido es demasiado alto */
+    box-sizing: border-box; /* Incluye el padding en el tamaño total del elemento */
+}
+
+.result-title{
+    margin-top: 1rem;
+}
+
+.result-title span {
+    color: var(--color-search);
+    font-weight: bold;
+}
+
+.line-result-title {
+    display: inline-block;
+    width: calc(100% - 100px); /* Ajusta el ancho para que abarque todo el ancho disponible menos el espacio del primer span */
+    height: 3px; /* Altura de la línea */
+    background-color: var(--color-border); /* Color de la línea */
+    margin-left: 10px; /* Espacio entre el primer span y la línea */
+    vertical-align: middle; /* Alinea verticalmente al centro */
+}
+
+
+
+.content__cards__rows{
+    display: flex; 
+    flex-direction:row;
+    margin-top: .5rem;
+}
+
+.content-card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    gap: .5rem;
+}
+
+.content-card-info span {
+    justify-self: start;
+    align-self: flex-start; /* Alinea los span a la izquierda */
+}
+
+.content-card-img{
+    width: 150px;
+    height: 100px;
+    
+}
+
+.content-card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+
+.banner__responsive { /* banner__responsive__responsive de mensaje principal */
+    display: none;
+    background-color: var(--bg-primary);
+    color: var(--color-text-md-light);
+    padding: 0;
+    margin-top: 0;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    /* display: none; */
+    padding: .3rem;
+}
+
+.banner__responsive p{
+    margin: 0;
+    padding: .5rem;   
+}
+
+.banner__responsive span{
+    color: rgb(180, 139, 14);
+}
+
+
+.banner__desktop { /* banner__responsive__responsive de mensaje principal */
+    display: flex;
+    background-color: var(--bg-primary);
+    color: var(--color-text-md-light);
+    padding: 0;
+    margin-top: 0;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    /* display: none; */
+    padding: .3rem;
+}
+
+.banner__desktop p{
+    margin: 0;
+    padding: .5rem;   
+}
+
+.banner__desktop span{
+    color: rgb(180, 139, 14);
+}
+
+
+
+/* Mini Footer */
+.footer__menu i{
+    padding-right: .3rem;    
+}
+
+
+.us,
+.social-networks,
+.customer-service {
+    font-weight: bold; /* Aplica negritas a los elementos con estas clases */
+}
+
+
+.col-II {
+    display: flex;
+    flex-direction: row; /* Poner 2 columnas */
+}
+
+.col-II .col {
+    flex: 1; /* Asegura que cada columna ocupe el mismo espacio */    
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+.line{
+    width: 96%; /* Asegura que el rectángulo ocupe todo el ancho del contenedor */
+    height: 1px;
+    background-color: var(--bg-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;   
+}
+
+.copy-mini{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+/* Footer Mobile */
+
+.footer__responsive {
+    padding: .6rem;
+}
+
+.footer__responsive a {
+    color: black;
+    text-decoration: none;
+}
+
+.logo-footer-responsive {
+    display: flex;
+    align-items: center;
+}
+
+.responsive-columns {
+    display: flex;
+    flex-direction: row; /* Poner 2 columnas */
+    justify-content: space-between; /* Espacio entre las columnas */
+    margin-top: 1rem;
+}
+
+.responsive-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Asegura que cada columna ocupe el mismo espacio */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */    
+}
+
+.responsive-column i {
+    margin-right: .3rem;
+}
+
+.responsive-us-column {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.responsive-us-column a {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los iconos y el texto */
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-bottom: 0.5rem; /* Añade un margen inferior para separar los enlaces */
+}
+
+.responsive-us-column i {
+    margin-right: .4rem;
+}
+
+
+
+.responsive-us,
+.responsive-social-networks,
+.responsive-customer-service {
+    font-weight: bold; /* Aplica negritas a los elementos con estas clases */
+}
+
+.responsive-line {
+    width: 96%; /* Asegura que el rectángulo ocupe todo el ancho del contenedor */
+    height: 1px;
+    background-color: var(--bg-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;   
+}
+
+.responsive-copy-mini {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-size: medium;
+}
+
+.elemt-footer-responsive {
+    margin-top: .5rem;
+}
+
+
+/* Footer Desktop */
+.footer__desktop {
+    padding: .6rem;
+    
+}
+
+.footer__desktop a {
+    color: black;
+    text-decoration: none;
+}
+
+.logo-footer-desktop {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.desktop-columns {
+    display: flex;
+    flex-direction: row; /* Poner 2 columnas */
+    justify-content:space-around; /* Centra las columnas horizontalmente */
+    margin-top: 1rem;
+}
+
+.desktop-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Asegura que cada columna ocupe el mismo espacio */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    max-width: 300px; /* Limita el ancho máximo de cada columna */
+}
+
+.desktop-column i {
+    margin-right: .3rem;
+}
+
+.desktop-us-column {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.desktop-us-column a {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los iconos y el texto */
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-bottom: 0.5rem; /* Añade un margen inferior para separar los enlaces */
+}
+
+.desktop-us-column i {
+    margin-right: .4rem;
+}
+
+.desktop-us,
+.desktop-social-networks,
+.desktop-customer-service {
+    font-weight: bold; /* Aplica negritas a los elementos con estas clases */
+}
+
+.desktop-line {
+    width: 96%; /* Asegura que el rectángulo ocupe todo el ancho del contenedor */
+    height: 1px;
+    background-color: var(--bg-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;   
+}
+
+.desktop-copy-mini {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-size: medium;
+}
+
+.element-footer-desktop {
+    margin-top: .5rem;
+}
+
+/* --------- Decoraciones ------------ */
+
+.line-div-responsive{
+    width: 100%;
+    height: 20px;
+    background-color: var(--bg-primary);
+    
+    justify-content: center;
+    align-items: center;    
+}
+
+
+/* Ocultando X elementos */
+.footer__responsive,
+.footer__desktop,
+.nav__desktop,
+.navbar__responsive {
+    display: none; /* Oculta ambos footers por defecto */
+}
+
+.title-divider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    color: var(--color-text-lg-gray);
+    font-size: var(--size-title-md);
+    font-weight:100;
+}
+
+.cards__products__oferts{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    padding: 2rem;
+    padding-top: 0;
+    box-sizing: border-box;
+}
+
+.banner__img__container {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.banner__img__container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner__img__container span {
+    color: var(--color-text-md-light);
+    font-size: 5rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    font-weight: bold;
+    z-index: 1; /* Ensure the text is above the image */
+}
+.cards__products__group {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas de igual tamaño */
+    gap: 0rem; /* Espacio entre los elementos */
+    padding: 1rem;
+    padding-top: 0;
+}
+
+.divider-sections-black{
+    width: 100%;
+    background-color: var(--bg-primary);
+    padding-top: 1.0rem;
+    padding-bottom: 1.0rem;   
+}
+
+.banner__txt-img__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    box-sizing: border-box;
+    overflow: hidden; /* Evita el desbordamiento */
+}
+
+.container-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.container-info span {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.container-info p {
+    font-size: 1.2rem;
+    color: gray;
+    margin-bottom: 1rem;
+    word-wrap: break-word;
+}
+
+.container-info a {
+    text-decoration: none;
+    color: rgba(165, 164, 164, 0.753);
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border: solid 1px var(--color-search);
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.container-info a:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.container-img {
+    max-width: 50%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.container-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-sizing: border-box;
+}
+
+/* Whatsapp Float */
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
+}
+
+.whatsapp-float i {
+    margin-top: 16px; /* Ajusta el margen superior para centrar el icono verticalmente */
+}
+
+/* Arriba boton */
+.arrow-up {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 110px; /* Ajusta la posición para que no se superponga con el botón de WhatsApp */
+    right: 40px;
+    background-color: #000; /* Color de fondo negro */
+    color: #FFF; /* Color del icono blanco */
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
+    display: none; /* Oculta el botón por defecto */
+}
+
+.arrow-up i {
+    margin-top: 16px; /* Ajusta el margen superior para centrar el icono verticalmente */
+}
+
+/* Mostrar el botón cuando se hace scroll hacia abajo */
+body.scrolled .arrow-up {
+    display: block;
+}
+
+
+
+/* Responsive sections */
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 576px) {
+    .footer__responsive {
+        display: block; /* Muestra el footer responsivo */
+    }
+    .navbar__responsive {
+        display: block; /* Muestra el menú responsivo */
+    }
+    .cards__products__oferts{
+        display: flex;
+        flex-direction: column;        
+    }
+    .title-divider{
+        margin-top: 2rem;
+        font-size: 1rem;
+    }
+
+    .banner__responsive{
+        display: flex;
+    }
+
+    .banner__desktop{
+        display: none;
+    }
+
+    .bar__category{
+        display: none;
+    }
+    .banner__img__container{
+        display: flex;
+        position: relative;
+        border: solid 1px var(--color-border);
+        width: 100%;
+        height: 35vh;
+    }
+    
+    .banner__img__container img{
+        width: 100%;
+        height: 100%;
+        object-fit:fill;
+    }
+
+    .banner__img__container span{
+        color: var(--color-text-md-light);
+        font-size: 2rem;
+        bottom: 0;
+        right: 0;
+        padding-bottom: 1rem;
+        padding-right: 1rem;
+        font-weight: bold;
+    }
+
+    .cards__products__group {
+        display: flex;
+        flex-direction: column;
+        /* centrar */
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .banner__txt-img__container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .container-info {
+        max-width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .container-info span {
+        font-size: 2rem;
+    }
+
+    .container-info p {
+        font-size: 1rem;
+    }
+
+    .container-info a {
+        font-size: 1rem;
+        margin: 0 auto;
+    }
+
+    .container-img {
+        max-width: 100%;
+        padding: 1rem 0;
+    }
+
+}
+
+@media (min-width: 577px) {
+    .footer__desktop {
+        display: block; /* Muestra el footer de escritorio */
+    }
+    .nav__desktop {
+        display: block; /* Muestra el menú de escritorio */
+    }
+}
+
+/* Medium Devices (Small Laptops) */
+@media (min-width: 768px) and (max-width: 992px) {
+    
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 992px) and (max-width: 1200px) {
+    
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1200px) {
+   
+}
+
+*{
+    box-sizing: border-box;
+}

@@ -1,0 +1,15 @@
+/* Boton hamburgesa  */
+@import url(./element/hamburger.menu.css);
+
+
+input[type="text"]{
+    width: 100%;
+    border: none;
+    outline: none;
+    color: var(--color-text);
+}
+
+
+
+
+

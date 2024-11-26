@@ -1,0 +1,16 @@
+@import url('../main.css');
+
+/* ---- Componentens para el index ---- */
+
+/* NAV */
+@import url('../components/navbar.css');
+
+/* FOOTER */
+@import url('../components/footer.css');
+
+
+/* Formularios */
+@import url('../components/form.elements.css');
+
+
+
