@@ -10,14 +10,13 @@
             <search class="nav__search">
                 <a class="nav-link" href="#">
                     <span class="material-icons">search</span>
-                    <input placeholder="Buscar" type="text">
+                    <input id="" name=""placeholder="Buscar" type="text">
                 </a>
             </search>
 
-            <!-- data-element="componentsEditor.navbar.searchHolder.placeholder" -->
         </li>
         <li>
-            <a class="nav-link" href="#d">
+            <a class="nav-link" href="#">
                 <span class="material-icons">account_circle</span>
                 <p class="text-menu" data-element="componentsEditor.navbar.signin.text"></p>
             </a>

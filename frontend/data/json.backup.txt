@@ -13,7 +13,7 @@
         "lineBanner": {            
             "ofert": "Aprovecha las ofertas de temporada con todo",
             "ofertSmall": "0% de descuento en productos seleccionados",
-            "url": "./products"
+            "url": "/products"
 
         },
         "navbar": {

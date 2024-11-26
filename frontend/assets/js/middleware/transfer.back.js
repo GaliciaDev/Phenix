@@ -15,7 +15,7 @@ function updateMetaTags(data, document) {
     });
 }
 
-// Función para actualizar los elementos <link>, <img>, y <a> con atributos personalizados
+// Función para actualizar los elementos <link> y <img> con atributos personalizados
 function updateAttributes(data, document) {
     document.querySelectorAll('[data-src], [data-alt]').forEach(element => {
         const srcKey = element.getAttribute('data-src');
@@ -39,10 +39,6 @@ function updateDOMWithJSONData(data, document) {
         if (value) {
             if (element.tagName === 'TITLE') {
                 element.textContent = value;
-            } else if (element.tagName === 'A') {
-                element.setAttribute('href', value);
-            } else if (element.tagName === 'IMG') {
-                element.setAttribute('src', value);
             } else {
                 const textNode = document.createTextNode(value + ' ');
                 if (element.hasAttribute('data-after-insert')) {
@@ -61,18 +57,9 @@ function updateDOMWithJSONData(data, document) {
         }
     });
 
-    // Llamar a las funciones para actualizar los elementos <meta>, <link>, <img>, y <a>
+    // Llamar a las funciones para actualizar los elementos <meta>, <link> y <img>
     updateMetaTags(data, document);
     updateAttributes(data, document);
-
-    // Actualizar los elementos con el atributo link-element
-    document.querySelectorAll('[link-element]').forEach(element => {
-        const key = element.getAttribute('link-element');
-        const value = getNestedValue(data, key);
-        if (value) {
-            element.setAttribute('href', value);
-        }
-    });
 }
 
 // Función para manejar la respuesta del fetch

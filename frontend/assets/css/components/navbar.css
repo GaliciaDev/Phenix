@@ -5,15 +5,15 @@
 
 .nav-elements{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     border: var(--border-1);
-    padding: .5rem;
+    padding: .5rem 0;
 }
 
 .nav-elements li{
     list-style: none;
-    margin: 0 10px;
+    margin: 0;
 }
 
 .nav-link{
@@ -30,7 +30,9 @@
 .nav__search{
     border: 2px solid var(--color-border-main);
     border-radius: 5px;    
+    width: 60vw;
 }
+
 
 .nav__search span{
     border: 2px solid var(--color-border-main);
@@ -41,7 +43,7 @@
 }
 
 .nav-toogle{
-    display: flex;
+    display: none;
 }
 
 /* Hovers para esta seccion del nav */
@@ -61,7 +63,10 @@
 
 /* Parte responsiva para celures */
 @media screen and (max-width: 768px){
-    
+    .nav-toogle{
+        display: flex;
+    }
+
     .text-menu , .nav__search input{
         display: none;
     }
@@ -70,15 +75,26 @@
         white-space: nowrap;
         font-size: 1.2rem;
     }
+
+    .nav__search{
+        width: auto;
+    }
     
     .nav__search , .nav__search span{
         border: none;
         font-size: 1.6rem;
     }
-
+        
+    .nav__search:hover, .nav__search:hover span {
+        border: none;
+        color: inherit; /* Restablecer el color al valor heredado */
+    }
 
     
+
 }
+
+
 
 
 

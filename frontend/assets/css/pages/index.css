@@ -8,6 +8,8 @@
 /* FOOTER */
 @import url('../components/footer.css');
 
+@import url('../components/line.baner.css');
+
 
 /* Formularios */
 @import url('../components/form.elements.css');

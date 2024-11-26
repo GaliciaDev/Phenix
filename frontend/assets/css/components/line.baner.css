@@ -1,0 +1,32 @@
+.line-banner__container, .line-banner__container a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;    
+    background-color: var(--bg-primary);
+    padding: .2rem 0;
+}
+
+.line-banner__container span{
+    color: var(--color-notification);
+    padding: 0 .5rem;    
+    text-shadow: 0 0 3px var(--color-shadow);
+    
+}
+
+.line-banner__container a{
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.line-banner__container a:hover{
+    color: var(--hover-app-main);
+}
+
+@media screen and (max-width: 768px){
+    .line-banner__container a{
+        font-size: var(--size-text-sm);
+        
+    }
+}
+

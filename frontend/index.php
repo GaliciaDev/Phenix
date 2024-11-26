@@ -16,6 +16,7 @@
 <body>
     <header>
         <?php include_once './components/navbar.php'; ?>
+        <?php include_once './components/line.baner.php'; ?>
     </header>
 
     <main>
